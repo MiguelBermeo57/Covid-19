@@ -1,0 +1,207 @@
+.encabezado{
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+}
+.img-encabezado {
+    width: 10%;
+
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+
+}
+.menu-navegacion{
+    display: flex;
+    justify-content: space-around;
+
+}
+.menu-navegacion a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.menu-navegacion a.activo{
+    color: bisque;
+    border-bottom: 3px solid bisque;
+    padding: 5px;
+
+}
+/*para el main */
+.principal {
+    max-width: 1000px;
+    margin: 2rem auto; /* centrar y dar espacio */
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+main video {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+/* Estilos generales del footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Navegación del footer */
+footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer nav a.activo {
+    color: #f39c12;
+    border-bottom: 2px solid #f39c12;
+}
+/* Imagen de propaganda */
+footer .propaganda {
+    display: flex;
+    justify-content: center;
+}
+
+footer .propaganda img {
+    width: 150px;
+    border-radius: 4px;
+}
+
+/* Pie de página (copyright) */
+footer p {
+    /* Hace que el párrafo ocupe ambas columnas */
+    grid-column: 1 / -1; 
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    /* Borde superior: 1px sólido en gris (#555) */
+    border-top: 1px solid #555; 
+    padding-top: 1rem;
+}
+ .noticia,.principal section {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    background-color: #f9f9f9;
+}
+.noticia h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.noticia a {
+    text-decoration: none;
+    color: #2155da;
+    font-weight: bold;
+}
+
+/* ================================================= */
+/* AJUSTES DE DISEÑO LIMPIO Y NEUTRAL */
+/* ================================================= */
+
+/* 1. NAVEGACIÓN (Limpiando el color de fondo verde y el texto amarillo) */
+.menu-navegacion {
+    /* El fondo verde (#2e8b57) ha sido eliminado para un aspecto más limpio. */
+    padding: 15px 0;
+    display: flex; 
+    justify-content: center; /* Se mantiene el centrado con Flexbox */
+    gap: 20px; 
+}
+
+.menu-navegacion a {
+    color: #333; /* Texto más neutral (gris oscuro) */
+    text-decoration: none;
+    font-size: 1.5rem; 
+    font-weight: normal;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+/* Ajuste del enlace activo: más discreto */
+.menu-navegacion a.activo {
+    color: #333; 
+    background-color: #f0f0f0; /* Fondo gris muy claro */
+    border-bottom: none;
+    box-shadow: none;
+    transform: none;
+}
+
+/* 2. MAIN CONTENT (Eliminando el marco morado) */
+.principal {
+    /* El borde doble morado (5px double #8a2be2) ha sido eliminado. */
+    border-radius: 8px; 
+    /* El fondo gris claro se mantiene para un mejor contraste con el fondo de la página. */
+}
+
+/* 3. IMÁGENES (Eliminando los marcos verdes y sombras llamativas, manteniendo el centrado) */
+main img {
+    /* Centrado esencial */
+    display: block;
+    margin: 15px auto;
+    max-width: 90%; 
+    height: auto;
+    
+    /* Estilo sutil y limpio */
+    border: 1px solid #ccc; /* Un borde sutil gris claro */
+    padding: 2px;
+    border-radius: 4px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Una sombra muy suave */
+}
+
+/* 4. Estilos para el texto (se mantienen los estilos de listas/definiciones para un mejor acabado) */
+/* Dar un color de fondo diferente a los encabezados de sección */
+.principal h2 {
+    color: #555; /* Cambiamos el púrpura por un gris oscuro neutro */
+    text-align: center;
+    border-bottom: 2px solid #ccc; /* Borde inferior sutil */
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+/* Estilo para la lista de definición (Mortandad) */
+dl {
+    background-color: #f8f8f8; /* Un color de fondo muy suave */
+    padding: 15px;
+    border: 1px solid #ddd; /* Borde simple y discreto */
+}
+
+dt {
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-left: 3px solid #eee; /* Barra lateral más discreta */
+    padding-left: 10px;
+}
